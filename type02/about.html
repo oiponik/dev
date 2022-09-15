@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> type02_about </title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--	<link rel=stylesheet href="css/main.css">-->
+	<link rel=stylesheet href="css/sub.css">
+	<link rel="stylesheet" href="css/header_footer.css">
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+	
+</head>
+
+	<body>
+    
+        <header>
+            <div>
+                <div class="h_con">
+
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo" class="logo_1">
+                            <img src="img/logo_2.png" alt="logo" class="logo_2">
+                        </a>
+                    </h1>
+                    
+                    <ul class="nav justify-content-center menu_con">
+                        <li class="nav-item menu">
+                          <a class="nav-link" href="about.html">회사소개</a>
+                          <div class="sub_menu">
+                              <ul>
+                                  <li><a href="about.html">회사 소개</a></li>
+                                  <li><a href="#none">주요 연혁</a></li>
+                              </ul>
+                          </div>
+                        </li> 
+                        <li class="nav-item  menu">
+                          <a class="nav-link" href="product.html">제품소개</a>
+                          <div class="sub_menu">
+                              <ul>
+                                  <li><a href="product.html">Product</a></li>
+                              </ul>
+                          </div>
+                        </li> 
+                        <li class="nav-item menu">
+                          <a class="nav-link" href="#">Contact Us</a>
+                          <div class="sub_menu">
+                              <ul>
+                                  <li><a href="#none">고객 문의</a></li>
+                                  <li><a href="#none">오시는 길</a></li>
+                              </ul>
+                          </div>
+                        </li>  
+                    </ul>
+                    
+                    <div class="bar">
+                        <span class="bar_1"></span>
+                        <span class="bar_2"></span>
+                        <span class="bar_3"></span>
+                    </div>
+               
+                </div>
+            </div>
+        </header>
+        
+        <div class="sub about">
+        
+            <div class="bg">
+                 <p><span>COMPANY</span>회사 소개</p>
+            </div>
+            
+            <div class="sub_nav">
+                <ul class="nav nav-pills menu">
+                      <li class="nav-item">
+                       <!-- <a class="nav-link" href="#">Active</a>-->
+                        <a class="nav-link home" href="index.html"><img src="img/sub_home.jpg" alt="home"></a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">회사소개</a>
+                        <div class="dropdown-menu sub_menu">
+                          <a class="dropdown-item" href="about.html">회사소개</a>
+                          <a class="dropdown-item" href="product.html">제품소개</a>
+                          <a class="dropdown-item" href="#">Contact Us</a>
+<!--                          <div class="dropdown-divider"></div>-->
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">회사소개</a>
+                        <div class="dropdown-menu sub_menu">
+                          <a class="dropdown-item" href="about.html">회사소개</a>
+                          <a class="dropdown-item" href="#">주요연혁</a>
+<!--                          <div class="dropdown-divider"></div>-->
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            
+            <div class="media about_con">
+                  <div class="media-body align-self-center infor">
+                    <img src="img/title_bg.png" class="text_bg" alt="img">
+                    
+                    <p class="t1"><span>COMPANY</span> 는 1999년 설립되어 IT분야의 디스플레이에 적용되는 제품을<br>시작으로 현재는 TV와 스마트폰 분야의 디스플레이 제품까지 확대하였으며,<br>지속 성장하는 회사가 되기 위해 디스플레이 분야 외에 자동차 및 가전 등<br>신규 분야로의 진출에 박차를 가하고 있습니다.</p>
+                    <p class="t2">제품기획부터 개발 및 SCM에 이르기까지 제품 전 과정에서<br>고객가치를 기반으로 사고하고 혁신하도록 더욱 노력하겠습니다.</p>
+                    <p class="t3"><span>COMPANY</span>의 도전에 여러분의 많은 관심과 성원 부탁드립니다.</p>
+                    <p class="t4">대표이사 <span>홍길동</span></p>
+                  </div>
+                  <img src="img/about_img.jpg" class="align-self-center mr-3" alt="img">
+            </div>
+        
+        </div>
+
+       
+       
+        <footer>
+            <div>
+                <p>업체명: COMPANY &#124; 대표자 : 홍길동 &#124; 사업자등록번호 : 125-01-12345<br>대표번호 : 031-012-4865 &#124; Info : gildong@company.com &#124; 주소: 경기도 성남시 수정구 창업로 42</p>
+                <p>COPYRIGHT &#169; 2021 COMPANY Co., Ltd. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+    
+    </body>
+</html>
+
+
+<script>
+
+    $(document).ready(function(){
+
+        //nav
+        $('header .h_con .menu_con .menu').mouseover(function(){
+           $('header .sub_menu').addClass('sub_on'); 
+        });
+        $('header .h_con .menu_con .menu').mouseleave(function(){
+           $('header .sub_menu').removeClass('sub_on'); 
+        });
+
+        
+        $('header .h_con .menu_con .menu a').mouseover(function(){
+            $('header>div').addClass('active');
+            $('header .h_con .menu_con .menu>a').addClass('a_on');
+            $('header .h_con .bar span').addClass('bar_on');
+        });
+        $('header .h_con .menu_con .menu a').mouseleave(function(){
+            $('header>div').removeClass('active');
+            $('header .h_con .menu_con .menu>a').removeClass('a_on');
+            $('header .h_con .bar span').removeClass('bar_on');
+        });
+        
+        
+        //nav bar
+        $('header .h_con .bar').click(function(){
+           
+            $('header .sub_menu').toggleClass('sub_on');
+            $('header>div').toggleClass('active');
+            $('header .h_con .menu_con .menu>a').toggleClass('a_on');
+            $('header .h_con .bar span').toggleClass('bar_on');
+        });
+        
+        
+        //scroll nav
+        $(window).scroll(function(){
+            scrollPercent = ( $(window).scrollTop()/ ( $(document).height()-$(window).height() ) ) * 100; 
+            console.log(scrollPercent);
+            
+            if(scrollPercent>0){
+                $('header').addClass('scroll');
+            }else{
+                $('header').removeClass('scroll');
+            }  
+        });
+        
+        
+        
+        
+    });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

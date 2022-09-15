@@ -1,0 +1,71 @@
+@import "reset.css";
+
+body{overflow-x:hidden;}
+
+/*sub_nav*/
+.sub{}
+.sub .sub_nav{width:100%; background:#fafafa; border-bottom: 1px solid #dfdfdf; box-sizing: border-box;}
+.sub .sub_nav .menu{width:1200px; margin:0 auto;}
+.sub .sub_nav .menu .nav-link{width:150px; padding:0; text-align: center; height: 62px; line-height: 62px; font-size: 18px; border-right: 1px solid #dfdfdf; border-radius: 0;}
+.sub .sub_nav .menu .home{border:0; width: auto;}
+.sub .sub_nav .menu .sub_menu{width: 150px; min-width:150px; border-radius: 0; margin-top:0;}
+.sub .sub_nav .menu .sub_menu .dropdown-item{padding: 10px;}
+.sub .sub_nav .menu .nav-link:hover{color: #e15754;}
+.sub .sub_nav .menu .show>.nav-link{color: #fff; background-color: #e15754;}
+
+
+
+
+/*about------------------------------------------------*/
+.about .bg{width:100%; height: 425px; background: url(../img/sub_bg.jpg); background-size: cover; position: relative;}
+.about .bg p{width:1200px; margin:0 auto; padding-top:200px; text-align: center; font-size: 40px; color: white; font-family: 'Nanum_b';}
+.about .bg p span{font-size: 15px; display: block; margin-bottom: 15px;}
+
+.about .about_con{width:1200px; margin:0 auto; padding:100px 0;}
+.about .about_con .infor{ position: relative;}
+.about .about_con .infor .text_bg{position: absolute; top:-35px; left: -35px; z-index: -1;}
+.about .about_con .infor p{line-height: 1.7em; color:#5b5b5b; font-size: 16px; margin-bottom: 20px;}
+.about .about_con .infor .t1 span{font-size: 23px; color:#ec1c2a; font-family: 'Nanum_b';}
+.about .about_con .infor .t3{color:#333; font-size: 18px; font-family: 'Nanum_b'; margin-bottom: 40px;}
+.about .about_con .infor .t4{color:#333;}
+.about .about_con .infor .t4 span{font-size: 30px; font-family: 'Nanum_b'; margin-left: 10px;}
+
+
+
+/*product---------------------------------------------------*/
+.product{}
+.product .bg{width:100%; height: 425px; background: url(../img/sub_bg2.jpg); background-size: cover; position: relative;}
+.product .bg p{width:1200px; margin:0 auto; padding-top:200px; text-align: center; font-size: 40px; color: white; font-family: 'Nanum_b';}
+.product .bg p span{font-size: 15px; display: block; margin-bottom: 15px;}
+
+.product .product_con{width:1200px; margin:0 auto; padding:100px 0;}
+.product .product_con h2{font-size: 30px; font-family: 'Nanum_b'; margin-bottom: 20px;}
+.product .product_con p{font-size: 18px; color:#565656;}
+
+.product .product_con .contents{width: 100%; font-size: 0;}
+.product .product_con .contents .card{width:575px; height: 299px; margin-right: 50px; overflow: hidden; display: inline-block; background: black; border-radius: 0; cursor: pointer;}
+.product .product_con .contents .card:last-child{margin-right: 0;}
+.product .product_con .contents .card img{opacity: .4; transform: scale(1); transition: all 2s;}
+.product .product_con .contents .card:hover img{transform: scale(1.2); transition: all 2s;}
+
+.product .product_con .contents .card .p_text{color:white; text-align: center; padding-top:80px;}
+.product .product_con .contents .card .p_text h5{color:white; font-size: 20px; margin-bottom: 40px; font-family: 'Nanum_b';}
+.product .product_con .contents .card .p_text p{color:white; font-size: 16px; line-height: 1.5em;}
+
+
+/*product_view----------------------------------------------*/
+.product_view{}
+.product_view .bg{width:100%; height: 425px; background: url(../img/sub_bg2.jpg); background-size: cover; position: relative;}
+.product_view .bg p{width:1200px; margin:0 auto; padding-top:200px; text-align: center; font-size: 40px; color: white; font-family: 'Nanum_b';}
+.product_view .bg p span{font-size: 15px; display: block; margin-bottom: 15px;}
+
+.product_view .product_view_con{width: 1200px; margin:0 auto; padding:100px 0;}
+.product_view .product_view_con h2{font-size: 30px; font-family: 'Nanum_b'; margin-bottom: 50px; color:#e15754;}
+.product_view .product_view_con .detail{margin-bottom: 50px;}
+.product_view .product_view_con .d1 img{margin-right: 0!important; margin-left: 50px; width:700px;}
+.product_view .product_view_con .d2 img{margin-right: 50px!important;}
+.product_view .product_view_con .detail h5{font-size: 20px; margin-bottom: 20px; font-family: 'Nanum_b'; color:#333;}
+.product_view .product_view_con .detail p{line-height: 1.5em; color:#565656; font-size: 16px; word-break: keep-all;}
+
+
+

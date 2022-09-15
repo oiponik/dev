@@ -1,0 +1,49 @@
+@import "reset.css";
+
+body{overflow-x:hidden;}
+
+
+.main section{padding:100px 0; }
+.main section h2{color:#333; font-size: 40px;}
+.main section .container{width:1200px; max-width: none!important; margin:0 auto;}
+
+.main .mainVis .main_img{background: url(../img/main01.jpg); background-size: cover; width:100%; height: 693.8px;}
+/*.main .mainVis p{position: absolute; z-index: 10; width:100%; top:300px; text-align: center; font-size: 65px; color: white; font-family: 'Nanum_b';}*/
+.main .mainVis .main_txt{position: absolute; z-index: 10; width: 100%; top:300px; }
+.main .mainVis p{width: 1200px; margin:0 auto; text-align: center; font-size: 65px; color: white; font-family: 'Nanum_b';}
+.main .mainVis p span{display: block; font-size: 20px; font-family: 'Nanum_r'; margin-top:10px;}
+.main .mainVis .carousel-indicators{bottom: 30%;}
+
+.main .mainVis .carousel-indicators li{width:12px; height: 12px; border-radius: 50%;}
+
+
+.main .con1{width:1200px; margin: 0 auto; padding-bottom: 200px; position: relative;}
+.main .con1 .intro{position: relative;}
+.main .con1 .intro .title{line-height: 1.2em; margin-bottom: 85px!important; margin-top:35px!important;}
+.main .con1 .intro .title img{position: absolute; top:0; left: -35px; z-index: -1;}
+.main .con1 .intro .title span{font-family: 'Nanum_r'; display: block;}
+.main .con1 .intro p{line-height: 1.5em; color:#5b5b5b; font-size: 18px; margin-bottom: 50px;}
+.main .con1 .intro p span{color:#333; display: inline-block; font-family: 'Nanum_b';}
+.main .con1 .intro .btn{border-radius: 0; font-size: 13px;}
+.main .con1 .img2{position: absolute; top:205px; right: 325px;}
+
+
+.main .con2{background:#f3f3f3;}
+.main .con2 img{cursor: pointer;}
+.main .con2 .title{ margin-bottom: 35px;}
+.main .con2 .title::after{content: ''; width:50px; height: 2px; background:#333; display: block; margin-top: 20px;}
+.main .con2 p{line-height: 1.5em; color:#5b5b5b; font-size: 18px;}
+.main .con2 .product1{margin-bottom: 70px;}
+.main .con2 .product1 .title::after{margin-left: 470px;}
+.main .con2 .product1 .text{text-align: right;}
+
+
+.main .con3{background:url(../img/bg.jpg); background-size: cover;}
+.main .con3 .contact{width:1200px; margin: 0 auto; background:white;}
+.main .con3 .contact{}
+.main .con3 .contact .title{margin-bottom: 30px; text-align: center;}
+.main .con3 .contact p{padding:0 60px; color:#5b5b5b; font-size: 18px;}
+.main .con3 .contact p span{display: block; border-bottom: 1px solid #dfdfdf; padding:15px 0; vertical-align: middle;}
+.main .con3 .contact p span img{vertical-align: middle; margin-right: 10px;}
+
+

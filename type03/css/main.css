@@ -1,0 +1,76 @@
+@import "reset.css";
+
+body{overflow-x:hidden;}
+
+
+
+.main{}
+.main .main_bg{background:url(../img/main01.jpg); background-size: cover; width:100%; height: 460px;}
+.main .container{width:1250px; max-width: none!important; margin:0 auto; padding-right: 0; padding-left: 0;}
+
+.main .about_con .bg{background:#f8f8f8; z-index: -1; width:100%; height: 359px; position: absolute; bottom: 0;}
+
+.main .product_con{width:100%; background:#f8f8f8;}
+.main .product_con .card-group{font-size: 0; width: 1250px;}
+.main .product_con .product{display: inline-block; font-size: 14px; margin-bottom:0; border:0; border-radius: 0; padding:20px 20px 0 20px; box-sizing: border-box; background:#f8f8f8;}
+.main .product_con .product .text{text-align: center; padding:20px; color:#a2a2a2;}
+.main .product_con .product .text h5{font-size: 22px; font-family: 'Nanum_b'; color:#333;}
+.main .product_con .product .text p{}
+.main .product_con .product:hover{ background:#f8a71a; cursor: pointer; color:white;}
+.main .product_con .product:hover .text h5,
+.main .product_con .product:hover .text p{color:white;}
+
+.main .about_con{width:100%; padding:100px 0 200px 0; box-sizing: border-box; position: relative;}
+.main .about_con .container{width:1250px; position: relative;}
+/*about_bg*/
+.main .about_con .about_bg{width:100%; height: 483px; background:url(../img/about_bg.jpg); background-size: cover; color:white; }
+.main .about_con .about_bg h2{font-size: 65px; font-family: 'Nanum_e'; padding:150px 0 0 100px; }
+.main .about_con .about_bg h2 span{display: block; font-size: 18px; font-family: 'Nanum_r'; margin-top:10px;}
+/*about*/
+
+
+.main .about_con .about{font-size: 0; width:1125px; position: absolute; bottom: -100px; right: 0;}
+.main .about_con .about .con{width:281px; height: 255px; display: inline-block; font-size: 14px; border:0; border-radius: 0; border-radius: 1px solid #dfdfdf; margin-bottom: 0!important; padding:20px 0; vertical-align: top;}
+
+
+.main .about_con .about .con .card-header{border:0; padding:10px; color:#333; font-family: 'Nanum_b'; line-height: 1.2em;}
+.main .about_con .about .con .card-footer{border:0; padding:;}
+.main .about_con .about .con .card-body p{line-height: 1.4em; color:#8d8d8d;}
+
+/*about con1*/
+.main .about_con .about .con1{background:#23408f;}
+.main .about_con .about .con1 .card-header{color:white;}
+.main .about_con .about .con1 h5{color:white; font-family: 'Nanum_e'; font-size: 30px;}
+.main .about_con .about .con1 .link{color:rgba(255, 255, 255, 0.5); cursor: pointer;}
+.main .about_con .about .con1 .link img{margin-left: 10px; vertical-align: middle; padding-bottom: 3px;}
+/*about con2*/
+.main .about_con .about .con2{}
+.main .about_con .about .con2 .card-header{border-right:1px solid; border-color:#dfdfdf!important;}
+.main .about_con .about .con2 .card-body{border-right:1px solid; border-color:#dfdfdf!important;}
+/*about con3*/
+.main .about_con .about .con3{}
+.main .about_con .about .con3 .card-header{border-right:1px solid; border-color:#dfdfdf!important;}
+.main .about_con .about .con3 .card-body{border-right:1px solid; border-color:#dfdfdf!important;}
+
+.main .contact_con{background: #f8f8f8; padding-bottom: 100px;}
+.main .contact_con .contact{}
+.main .contact_con .contact h2{font-size: 65px; font-family: 'Nanum_e'; margin-bottom:40px; color:#333;}
+.main .contact_con .contact p{font-size: 18px; font-family: 'Nanum_b'; color:#333;}
+.main .contact_con .contact p img{display: inline-block; vertical-align: middle;}
+.main .contact_con .contact p span{display: block; margin-top:5px; color:#565656; font-size: 16px; line-height: 1.3em; text-indent: 10px;}
+.main .contact_con .contact p span span{text-indent: 10px;}
+.main .contact_con .contact .map{margin-right: 0!important; border:1px solid #dfdfdf;}
+
+/*카카오지도*/
+.root_daum_roughmap .wrap_controllers{display: none;}
+
+
+
+
+
+
+
+
+
+
+
