@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Sample </title>
+	
+	
+	<style type="text/css">
+        html, body{width:100%; margin:0;padding:0; overflow-x: hidden; /*max-width: 100%;*/}
+        img{margin:0; padding:0; border:0;}
+        ul,li{list-style: none; margin:0;padding:0;}
+        
+        .menu{position:fixed; top:50px; left: 0px; width:152px; border:1px solid #dfdfdf; box-sizing: border-box;}
+        .menu dl{width:150px; margin-top:0; background:white; margin-bottom: 0;}
+        .menu dl dt{font-size: 14px; padding:10px 0; text-align: center; background:#cbcbcb;}
+        .menu dl dd{width:150px; padding: 7px; text-align: left; margin-left: 0; box-sizing: border-box; font-size: 13px; cursor: pointer; border-bottom: 1px solid #dfdfdf; box-sizing: border-box;}
+        .menu dl dd:last-child{border-bottom:0;}
+        .menu dl dd:hover{background:#c9eaff;}
+        .menu dl dd.active{background:#c9eaff;}
+        
+        .page li{width:100%;}
+        
+        
+/*
+        .page li.main_1{ height: 1268px; background: url(main_1.jpg); background-size: cover;}
+        .page li.main_2{height: 1268px; background: url(main_2.jpg); background-size: cover;}
+        .page li.main_3{height: 1268px; background: url(main_3.jpg); background-size: cover;}
+        .page li.main_4{height: 1268px; background: url(main_4.jpg); background-size: cover;}
+        .page li.main_s{height: 1268px; background: url(main_slide.jpg) center center no-repeat; background-size: cover;}
+        
+        .page li.intro{height: 1451px; background: url(introduce.jpg); background-size: cover;}
+        .page li.business{height: 2493px; background: url(business.jpg); background-size: cover;}
+        
+        .page li.ip_list{height: 3888px; background: url(ip_list.jpg); background-size: cover;}
+        .page li.ip_p{height: 3314px; background: url(ip_platform.jpg); background-size: cover;}
+        
+        .page li.trans{height: 2608px; background: url(transceiver.jpg); background-size: cover;}
+        
+        .page li.phy{height: 2253px; background: url(physical_design.jpg); background-size: cover;}
+        
+        .page li.contact{height: 1943px; background: url(location.jpg); background-size: cover;}
+*/
+        
+        
+        .con{display: none;}
+        .con.active{display: block;}
+        
+        
+/*
+        .test{width:100%; position: absolute; top:0;}
+        .test div{width:1250px; height: 100px; background:red; margin:0 auto;}
+*/
+        
+    </style>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           
+            $('.menu dl dd').click(function(){
+               var tab = $(this).attr('data-tab');
+                
+                $('.menu dl dd').removeClass('active');
+                $('.con').removeClass('active');
+                
+                $(this).addClass('active');
+                $("."+tab).addClass('active');  
+            }); 
+        });
+    </script>
+	
+</head>
+
+	<body>
+        
+        <div class="page">
+<!--
+            <ul>
+                <li class="con main_1 active"></li>
+                <li class="con main_2"></li>
+                <li class="con main_3"></li>
+                <li class="con main_4"></li>
+                <li class="con main_s"></li>
+                
+                <li class="con intro"></li> 
+                <li class="con business"></li>
+                
+                <li class="con ip_list"></li>
+                <li class="con ip_p"></li>
+                
+                <li class="con trans"></li>
+                
+                <li class="con phy"></li>
+                
+                <li class="con contact"></li>
+            </ul>
+-->
+       
+       
+           <ul>
+                <li class="con main_1 active"><img src="sample01.jpg" alt="img"></li>
+                <li class="con main_2"><img src="sample02.jpg" alt="img"></li>
+                <li class="con main_3"><img src="sample03.jpg" alt="img"></li>
+            </ul>
+       
+       
+       
+        </div>
+        <div class="test"><div></div></div>
+        
+        
+        <div class="menu">
+            <dl>
+                <dt>MAIN</dt>
+                <dd data-tab="main_1" class="active">main_슬라이드이미지1</dd>
+                <dd data-tab="main_2">main_슬라이드이미지2</dd>
+                <dd data-tab="main_3">main_슬라이드이미지3</dd>
+            </dl>
+        </div>
+        
+    
+    </body>
+</html>
