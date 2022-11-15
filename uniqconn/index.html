@@ -6,339 +6,328 @@
 <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
 
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title> type01_mobile </title>
+
+	<title>Uniqconn</title>
+	
+	<link rel=" shortcut icon" href="img/logo.svg">
+    <link rel="icon" href="img/logo.svg">
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-<!--	<link rel="stylesheet" href="css/fullpage.min.css">-->
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/header_footer.css">
 	<link rel=stylesheet href="css/main.css">
-	
+<!--	<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/swiper.min.js"></script>
-<!--	<script src="js/fullpage.min.js"></script>-->
 	
 </head>
-
 	<body>
+   
+   <div class="content_wrap">
     
         <header>
             <div>
                 <div class="h_con">
-
                     <h1 class="logo">
-                        <a href="index.html">
-                            <img src="img/logo.png" alt="logo" class="logo_1">
-                            <img src="img/logo2.png" alt="logo" class="logo_2">
-                        </a>
+                        <a href="index.html"><img src="img/logo.svg" alt="logo" class="img"></a>
                     </h1>
-                    
                     <ul class="nav justify-content-end menu_con">
                         <li class="nav-item menu">
-                          <a class="nav-link" href="#about">ABOUT</a>
+                          <a class="nav-link" href="#about">What if</a>
                         </li> 
                         <li class="nav-item  menu">
-                          <a class="nav-link" href="#product">PRODUCT</a>
+                          <a class="nav-link" href="#solutions">Solution</a>
                         </li>
                         <li class="nav-item menu">
-                            <a class="nav-link" href="#tech">TECHNOLOGY</a>
+                            <a class="nav-link" href="#business">Resource</a>
                         </li> 
                         <li class="nav-item menu">
-                          <a class="nav-link" href="#contact">CONTACT</a>
+                          <a class="nav-link" href="#contact">Contact</a>
                         </li>  
                     </ul>    
-                </div>
-                
+                </div><!--h_con--> 
             </div>
         </header>
-
+        
         <div class="pageNav">
            <div>
             <ul>
-                <li class="active"><a href="#main">MAIN</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#product">PRODUCT</a></li>
-                <li><a href="#tech">TECHNOLOGY</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li class="active"><a href="#main" class="on" data-scroll="1">MAIN</a></li>
+                <li><a href="#about" data-scroll="2">What if</a></li>
+                <li><a href="#solution" data-scroll="3">Solution</a></li>
+                <li><a href="#resource" data-scroll="4">Resource</a></li>
+                <li><a href="#contact" data-scroll="5">Contact</a></li>
             </ul>
             <div class="dot"></div>
             </div>
         </div>
-        
-       
-<!--       <div class="fullpage">-->
-       
-        <section class="mainVis page" id="main" target-index="0">
+
+
+        <section class="mainVis section01" id="main" target-index="0">
             <div class="contents">
                 <div class="main_con">
-                    <span>Smart &amp; Intelligent</span>
-                    <h2 class="main_title">COMPANY</h2>
-                    <p>인재와 기술을 바탕으로 최고의 제품과 서비스를 창출함으로써 인류사회의 꿈을 실현합니다.</p>
-                </div>
+                    <h2>Unique Connectivity</h2>
+                    <p class="subTitle">Wireless high-speed data transfer solution,
+                        replacing cable and connector</p>
+                        
+                </div><!--main_con-->
+                
+            </div>
+            
+            <div class="scrollGuide">
+                <p>SCROLL DOWN</p>
+                <img src="img/icon_mouse.svg" />
             </div>
         </section>
               
               
-        <section class="about page" id="about" target-index="1">
+        <section class="whatif" id="Whatif" target-index="1">
+           
+           <div class="border_con"><div></div></div>
+           
             <div class="contents">
                 <div class="about_con">
-                    <h2>About</h2>
-                    <h3>We sill serve the earth width our <span>technology and products</span></h3>
-                    <p>컴퍼니는 ‘땅끝까지 우리의 기술과 제품을 가지고 섬긴다’는 사명 아래 선진 기술과 기업 문화를 경쟁력으로 삼아 지속성장하는 글로벌 기업으로 발돋움할 것입니다.</p>
-                </div>
-            </div>
-        </section>
-               
-        <section class="product page" id="product" target-index="2">
-            <div class="contents">
-                <div class="product_con">
-                    <h2>Product</h2>
-                    
-                    <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                    
-                     <div class="card-deck swiper-slide">
-                             
-<!--                        <div class="swiper-slide">-->
-                            <div class="card product_1 pd ">
-                              <div class="img_area"></div><img src="img/product01.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Tube SoM</h5>
-                                <p class="card-text">need a text for tube SoM</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">more</button>
-                              </div>
-                            </div>
-<!--                        </div>-->
-                        </div>
-                        
-                        <div class="card-deck swiper-slide">
-                            <div class="card product_2 pd">
-                              <img src="img/product02.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Tube Development Kit</h5>
-                                <p class="card-text">need a text for tube SoM</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">more</button>
-                              </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card-deck swiper-slide">
-                            <div class="card product_3 pd">
-                              <img src="img/product03.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Tube Accessories</h5>
-                                <p class="card-text">need a text for tube SoM</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3">more</button>
-                              </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card-deck swiper-slide">   
-                            <div class="card product_4 pd">
-                              <img src="img/product04.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <h5 class="card-title">Tube Solution</h5>
-                                <p class="card-text">need a text for tube SoM</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal4">more</button>
-                              </div>
-                            </div>
-                        </div>
-                        
-                    </div> <!--swiper-wrapper-->
+                     <h2>What if</h2>
+                     <p class="subTitle"><span>You have 6Gbps+, mm-sized,</span> 
+                        mW-consuming, 60GHz band interconnect solution?</p> 
                      
-                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                      
-                    </div> <!--swiper-container-->
-                       
-                </div> <!--product_con-->
-            </div> <!-- contents-->
+                     <div class="about_wrap">
+                        <div class="swiper-container slide_con">
+                            <div class="swiper-wrapper">
+                                    <div class="card swiper-slide vision vision1">
+                                      <div class="img_area title">EMI immunity</div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">Immune from RF emissions
+                                            from Wi-Fi, BT, cellular
+                                            radios and 5G</h5>
+                                      </div>
+                                    </div>
+    
+                                    <div class="card swiper-slide vision vision2">
+                                      <div class="img_area title">No metal-contacting</div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">- No need for assembly<br>
+                                            - No wear and tear</h5>
+                                      </div>
+                                    </div>
+    
+                                    <div class="card swiper-slide vision vision3">
+                                      <div class="img_area title">Add value to application</div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">- ‘No port’, seamless design<br>
+                                            - Security Better IP rate</h5>
+                                      </div>
+                                    </div>
+    
+                                    <div class="card swiper-slide vision vision4">
+                                      <div class="img_area title">Creative design</div>
+                                      <div class="card-body">
+                                        <h5 class="card-title">without constraints of
+                                            physically-contacting
+                                            connectors and cables</h5>
+                                      </div>
+                                    </div>
+                            </div> <!--swiper-wrapper-->
+                         
+                            <div class="swiper-button-prev about_prev"></div>
+                            <div class="swiper-button-next about_next"></div>
+                          
+                        </div> <!--swiper-container--> 
+                    </div><!--history_wrap-->
+                     
+                     
+                </div><!--about_con-->
+            </div>
         </section>
-        
-        <section class="technology page" id="tech" target-index="3">
+                
+               
+        <section class="solution" id="solution" target-index="2">
+
             <div class="contents">
-                <div class="tech_con">
-                    <h2>Technology<span>기업의 차별화된 서비스를 소개합니다.</span></h2>
+                <div class="solution_con">
+<!-- <div class="test">   //솔루션 영역  </div>-->
+                    <h2>Solution</h2>
+                    <p class="subTitle"><span>For your creativity and signal integrity,</span>
+                        we develop and provide</p>
                     
-                     <div class="card-group tech_group">
-                          <div class="card tech tech_1">
-                            <img src="img/icon1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">기술연구</h5>
-                            </div>
-                          </div>
-                          <div class="card tech tech_2">
-                            <img src="img/icon2.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">글로벌 네트워크</h5>
-                            </div>
-                          </div>
-                          <div class="card tech tech_3">
-                            <img src="img/icon3.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">시스템 반도체</h5>
-                            </div>
-                          </div>
-                    </div>
- 
-                </div>
+                    <div class="solutions_wrap">
+                        <div class="swiper-container slide_con">
+                            <div class="swiper-wrapper">  
+                                <div class="card mb-3 swiper-slide solitem solitem_01">
+                                    <div class="card-body">
+                                        <h5 class="card-title">IC, AiP, Hard IP</h5>
+                                        <p class="card-text">
+                                            <span>60GHz CMOS RF transceiver</span>
+                                            <span>6Gbps / 10Gbps</span>
+                                            <span>FCBGA(2x2x1mm)</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-3 swiper-slide solitem solitem_02">
+                                    <div class="card-body">
+                                        <h5 class="card-title">EM mode transition and transmission line</h5>
+                                        <p class="card-text">
+                                            <span>Flexible and thin</span>
+                                            <span>up to 3meters</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-3 swiper-slide solitem solitem_03">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Module</h5>
+                                        <p class="card-text"><span>Custom design</span></p>
+                                    </div>
+                                </div>
+                                
+                            </div> <!--swiper-wrapper-->
+                         
+                            <div class="swiper-button-prev solution_prev"></div>
+                            <div class="swiper-button-next solution_next"></div>
+                          
+                        </div> <!--swiper-container--> 
+                    </div><!--history_wrap-->
+                      
+                </div> <!--history_con-->
             </div>
         </section>
         
-        <section class="contact page" id="contact" target-index="4">
+        
+        <section class="business" id="resource" target-index="3">
+            <div class="contents">
+                <div class="bg_border">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+               
+                <div class="business_con">
+                    <h2>Business</h2>
+                    <p class="subTitle">국내를 넘어, 글로벌 주요 세트 업체에 제품을 적용하며 세계적인 시스템반도체 팹리스 업체로 도약</p>
+
+                    <div class="business_wrap">
+                        <div class="swiper-container slide_con">
+                            <div class="swiper-wrapper bn">
+    
+                                <div class="card swiper-slide ic">
+                                  <div class="img_area img_con">
+                                      <img src="img/business_icon1.png" class="card-img-top" alt="icon">
+                                      <span>IC product</span>
+                                  </div>
+                                  <div class="card-body">
+                                    <p class="card-text"><span class="list"></span>Touch sensor IC</p>
+                                    <p class="card-text"><span class="list"></span>Hall effect sensor IC</p>
+                                    <p class="card-text"><span class="list"></span>Thermopile sensor IC</p>
+                                    <p class="card-text"><span class="list"></span>Automotive SDR IC</p>
+                                  </div>
+                                </div>
+    
+                                <div class="card swiper-slide soc">
+                                  <div class="img_area img_con">
+                                      <img src="img/business_icon2.png" class="card-img-top" alt="icon">
+                                      <span>SoC IP</span>
+                                  </div>
+                                  <div class="card-body">
+                                    <p class="card-text"><span class="list"></span>Analog &amp; Mixed signal IP</p>
+                                    <p class="card-text"><span class="list"></span>Processor integration &amp; <span class="interval">SoC platform</span></p>
+                                    <p class="card-text"><span class="list"></span>Sensor ROIC &amp; MCU <span class="interval interval2">solution</span></p>
+                                  </div>
+                                </div>
+    
+                                <div class="card swiper-slide sensor">
+                                  <div class="img_area img_con">
+                                      <img src="img/business_icon3.png" class="card-img-top" alt="icon">
+                                      <span>Sensor solution</span>
+                                  </div>
+                                  <div class="card-body">
+                                    <p class="card-text"><span class="list"></span>Touch sensor module</p>
+                                    <p class="card-text"><span class="list"></span>Thermopile sensor module</p>
+                                    <p class="card-text"><span class="list"></span>Embedded S/W</p>
+                                    <p class="card-text"><span class="list"></span>Application S/W</p>
+                                  </div>
+                                </div>
+                                
+                            </div> <!--swiper-wrapper-->
+                         
+                            <div class="swiper-button-prev business_prev"></div>
+                            <div class="swiper-button-next business_next"></div>
+                          
+                        </div> <!--swiper-container-->  
+                    </div><!--business_wrap-->
+                    
+                </div><!--business_con-->
+            </div>
+        </section>
+        
+        
+        <section class="contact" id="contact" target-index="4">
             <div class="contents">
                 <div class="contact_con">
                     <h2>Contact</h2>
-                    
-                     <div class="media ct">
-                          <div class="media-body align-self-center ct_text">
-                            <h5 class="mt-0">고객문의</h5>
-                            <p><span>주소</span>경기도 성남시 수정구 창업로 42</p>
-                            <p><span>대표번호</span>031-012-4865</p>
-                            <p class="mb-0"><span>메일</span>gildong@company.com</p>
+                    <div class="media ct">
+                        <div class="media-body align-self-center ct_infor">
+                          <div class="com">
+                             <div class="com_logo"><img src="img/logo.svg" alt="logo"></div>
                           </div>
-                          <div class="map align-self-center mr-3">
-                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.1097034330323!2d127.09283626564489!3d37.41088184078405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca7f3e2b4c2a5%3A0xe25bd0c77871ffd!2zTEgg7YyQ6rWQ7KCcMu2FjO2BrOuFuOuwuOumrCDquLDsl4XshLHsnqXshLzthLA!5e0!3m2!1sko!2skr!4v1632900294727!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          
+                          <div class="infor">
+                              <dl>
+                                  <dt>Address</dt>
+                                  <dd>42, Changeop-ro, Sujeong-gu, 
+                                    Seongnam-si, Gyeonggi-do, Republic of Korea 
+                                    (13449)</dd>
+                              </dl>
+                              <dl class="call">
+                                  <dt>Phone</dt>
+                                  <dd>+82-10-8848-2627</dd>
+                              </dl>
+                              <dl class="mail">
+                                  <dt>Mail</dt>
+                                  <dd>contact@uniqconn.com</dd>
+                              </dl>
                           </div>
+                        </div>
+                        
+                        <div id='map' class="map align-self-center mr-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1584.5333468971253!2d127.09362135827223!3d37.41189847540537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca7d52994f731%3A0x6689debf16f85785!2z6rK96riw6riw7JeF7ISx7J6l7IS87YSw!5e0!3m2!1sko!2skr!4v1635917443308!5m2!1sko!2skr" width="600" height="380" style="border:0;" allowfullscreen="" loading="lazy" scrollwheel="false"></iframe>
+                        </div>
                     </div>
-                    
-                    
-                </div>
+                </div><!--contact_con-->
             </div>
         </section>
-        
-<!--        </div>-->
-        
-
-        <!-- Modal 1 -->
-        <div class="modal fade popup" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tube SoM</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body pop_con">
-                <!-- Scrollable modal -->
-                <div class="modal-dialog modal-dialog-scrollable ">
-                    <div class="img"><img src="img/product01.jpg" alt="product"></div>
-                    <p>need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM need a text for tube SoM need a text for tube SoMneed a text for tube SoMneed a text for tube SoM need a text for tube SoM need a text for tube SoMneed a text for tube SoM need a text for tube SoM </p>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal 2 -->
-        <div class="modal fade popup" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tube SoM</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body pop_con">
-                <!-- Scrollable modal -->
-                <div class="modal-dialog modal-dialog-scrollable ">
-                    <div class="img"><img src="img/product02.jpg" alt="product"></div>
-                    <p>need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM SoM need a text for tube  </p>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal 3 -->
-        <div class="modal fade popup" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tube SoM</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body pop_con">
-                <!-- Scrollable modal -->
-                <div class="modal-dialog modal-dialog-scrollable ">
-                    <div class="img"><img src="img/product03.jpg" alt="product"></div>
-                    <p>need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM need a text for tube SoM need a text for tube SoMneed a text for tube SoMneed a text for tube SoM need a text for tube SoM need a text for tube SoMneed a text for tube SoM need a text for tube SoM </p>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal 4 -->
-        <div class="modal fade popup" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tube SoM</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body pop_con">
-                <!-- Scrollable modal -->
-                <div class="modal-dialog modal-dialog-scrollable ">
-                    <div class="img"><img src="img/product04.jpg" alt="product"></div>
-                    <p>need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM SoM need a text for tube SoM need a text for tube SoM need a text for tube SoMneed a text for tube SoMneed a text for tube SoM need a text for tube SoM need a text for tube SoMneed a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM need a text for tube SoM</p>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
+       
         <footer>
             <div>
-                <p>업체명: COMPANY &#124; 대표자 : 홍길동 &#124; 사업자등록번호 : 125-01-12345<br>대표번호 : 031-012-4865 &#124; Info : gildong@company.com &#124; 주소: 경기도 성남시 수정구 창업로 42</p>
-                <p>COPYRIGHT &#169; 2021 COMPANY Co., Ltd. ALL RIGHTS RESERVED.</p>
+                <p>업체명: 주식회사 큐버모티브  &#124; 대표자 : 이동원 대표이사 &#124; &#124; 대표번호 : 031-706-3707 &#124; FAX : 031-706-3708<br>
+                Contact : support@cubermotive.com &#124; 홈페이지 : http://www.cubermotive.com
+                <br>주소: (13449) 경기도 성남시 수정구 창업로 42번길, 판교 제2테크노밸리 경기기업성장센터, 214-215호</p>
+                <p>Copyright 2021. Cubermotive. All rights reserved.</p>
             </div>
         </footer>
         
         
-        
+        </div><!--content_wrap-->
         
     
     </body>
 </html>
 
-<script>
 
-    var currentSection = 1;
+<script>
     
+    var currentSection = 1;
+
     $(document).ready(function(){
         
-        //swiper
-        var swiper = new Swiper ('.swiper-container', {
-           
+        //history_swiper
+        var about_swiper = new Swiper ('.whatif .swiper-container', { 
             slidesPerView: 4,
             slidesPerGroup:4,
-            spaceBetween: 40,
+            spaceBetween: 15,
             
             navigation: {
             nextEl: '.swiper-button-next',
@@ -346,27 +335,100 @@
             },
             
             breakpoints:{
-                1200:{
+                1250:{
                     slidesPerView: 4,
                     slidesPerGroup:4,
-                    spaceBetween: 25,  
+                    spaceBetween: 15,  
                 },
-                
+                1249:{
+                    slidesPerView: 3,
+                    slidesPerGroup:1,
+                    spaceBetween: 20,
+                },
                 1023:{
+                    slidesPerView: 2,
+                    slidesPerGroup:2,
+                    spaceBetween: 20, 
+                },
+                767:{
+                    slidesPerView: 1,
+                    slidesPerGroup:1,
+                    spaceBetween: 20,
+                }
+           }    
+        });
+        //solutions_swiper
+        var solutions_swiper = new Swiper ('.solution .swiper-container', {
+           
+            slidesPerView: 3,
+            slidesPerGroup:3,
+            spaceBetween: 20,
+            
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            
+            breakpoints:{
+                
+                1250:{
+                    slidesPerView: 3,
+                    slidesPerGroup:3,
+                    spaceBetween: 20,  
+                },
+                1249:{
+                    slidesPerView: 3,
+                    slidesPerGroup:3,
+                    spaceBetween: 20,
+                },
+                1023:{
+                    slidesPerView: 2,
+                    slidesPerGroup:2,
+                    spaceBetween: 20, 
+                },
+                767:{
+                    slidesPerView: 1,
+                    slidesPerGroup:1,
+                    spaceBetween: 20,
+                }   
+            }
+  
+        });
+        //business_swiper
+        var business_swiper = new Swiper ('.business .swiper-container', { 
+            slidesPerView: 3,
+            slidesPerGroup:3,
+            spaceBetween: 0,
+            
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            
+            breakpoints:{
+                1250:{
+                    slidesPerView: 3,
+                    slidesPerGroup:3,
+                    spaceBetween: 0,  
+                },
+                1249:{
+                    slidesPerView: 3,
+                    slidesPerGroup:3,
+                    spaceBetween: 100,  
+                },
+                1023:{
+                    slidesPerView: 1,
+                    slidesPerGroup:1,
+                    spaceBetween: 20, 
+                },
+                767:{
                    slidesPerView: 1,
                    slidesPerGroup:1,
+                    spaceBetween: 20,
                 },
-               
-           } 
-            
+            }  
         });
-
-        
-        
-        //product 팝업
-        $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus');
-        });      
+    
 
         
         //header
@@ -384,47 +446,17 @@
             return false;
         });
         
-        //header 스크롤
-        $(window).scroll(function(){
-           
-            scrollPercent = ( $(window).scrollTop()/ ( $(document).height()-$(window).height() ) ) * 100; 
-//            console.log(scrollPercent);
-            
-            if(scrollPercent>0){
-                $('header').addClass('scroll');    
-            }else{
-                $('header').removeClass('scroll');
-            }
-        });
-
         
-        //pageNav ani
-        function dotanimation(pos){
-            
-            var dotposition = pos*21+7;
-            $('.pageNav li a').removeClass('on');
-            //console.log("currentSection : "+currentSection)
-            $('.pageNav li').eq(currentSection).children('a').addClass('on');
-            $('.pageNav .dot').stop().animate({"top":dotposition},500);  
-        }
-        
-        //pageNav
-        $('.pageNav ul li a').click(function(){
-           
-            $('.pageNav ul li').removeClass('active')
-            $(this).parent('li').addClass('active');
-            
-        });
-        
-        $('.pageNav li a').click(function(){           
-            currentSection = $(this).parent('li').index();
-            console.log(currentSection)
+        //nav클릭 
+        $('.nav li a').click(function(){
+            currentSection = $(this).parent('li').index()+1;
             var sectionPos = parseInt($('section').eq(currentSection).attr("data-index"));
-           $("html, body").stop().animate({"scrollTop":sectionPos},500);
+            $("html, body").stop().animate({"scrollTop":sectionPos},500);
             dotanimation(currentSection)
+            
         });
         
-        
+
         //지도 스크롤
         $('html, body').css({'overflow': 'hidden'});
         $('.map').on("touchmove mousewheel", function(event){
@@ -435,210 +467,160 @@
         });
         
         
+        //pageNav ani
+        function dotanimation(pos){
+            
+            var dotposition = pos*21+7;
+            $('.pageNav li a').removeClass('on');
+            //console.log("currentSection : "+currentSection)
+            $('.pageNav li').eq(currentSection).children('a').addClass('on');
+            $('.pageNav .dot').stop().animate({"top":dotposition},500);  
+        }
+        //pageNav
+        $('.pageNav ul li a').click(function(){
+           
+            $('.pageNav ul li').removeClass('active')
+            $(this).parent('li').addClass('active');
+            
+        });
+        $('.pageNav li a').click(function(){           
+            currentSection = $(this).parent('li').index();
+            console.log(currentSection)
+            var sectionPos = parseInt($('section').eq(currentSection).attr("data-index"));
+           $("html, body").stop().animate({"scrollTop":sectionPos},500);
+            dotanimation(currentSection)
+        });
+        
+
 
         
         
-
-       
-//        //마우스 휠
-//        var win_h = '';
-//        if($(window).height()<800){
-//                win_h = 800;
-//            }else{
-//                win_h = $(window).height();    
-//            }
-//        $("section").each(function(index){
-//            $(this).attr("data-index", win_h * index);           
-//        });
-//        
-//        $(window).resize(function(){                     
-//            if($(window).height()<800){
-//                win_h = 800;
-//            }else{
-//                win_h = $(window).height();    
-//            }
-//            
-//            $("section").each(function(index){
-//                $(this).attr("data-index", win_h * index);
-//            });
-//            
-//        });
-//        $("section").on("mousewheel", function(e){
-//                  
-//                var sectionPos = parseInt($(this).attr("data-index"));
-//                if(e.originalEvent.wheelDelta >=0){
-//                    $("html, body").stop().animate({"scrollTop":sectionPos - win_h},500);
-//                    return false;
-//                   
-//                }else if(e.originalEvent.wheelDelta < 0){
-//                    $("html, body").stop().animate({"scrollTop":sectionPos + win_h},500);
-//                    return false;    
-//                }    
-//            });  
-//        
-//        
-//        //모바일
-//
-//        var moWin_h = $(window).height(); 
-//        $("section").each(function(index){ 
-//            $(this).attr("data-index", moWin_h * index);
-//        });
-//        
-//        var ts;
-//        $("section").bind('touchstart', function(e){
-//            ts = e.originalEvent.touches[0].clientY;
-//        });
-//        
-//        
-//        $("section").bind("touchmove", function(e){
-//            
-//            var te = e.originalEvent.changedTouches[0].clientY;
-//           
-//            var mo_sectionPos = parseInt($(this).attr("data-index"));
-//            
-//            if(ts < te){
-//                $("html, body").stop().animate({"scrollTop":mo_sectionPos - moWin_h},500);
-//                console.log('모바일 위로');
-//            
-//            return false;
-//            
-//            }else if(ts >= te){
-//               $("html, body").stop().animate({"scrollTop":mo_sectionPos + moWin_h},500);
-//                console.log('모바일 아래로');
-//                
-//            return false;    
-//            }
-//            
-//            
-//            
-//        });
+   
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);        
         
-      //마우스 휠
+
+
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+        
+        
+
+
+        //마우스 휠
         var win_h = '';
-//        var win_h = $(window).height();
-        
-        // if($(window).height()<800){
-        //     win_h = 800;
-        // }else{
-        //     win_h = $(window).height();    
-        // }
-        
-//        var moWin_h = ''; 
-        var moWin_h = $(window).height(); 
+        var moWin_h = window.innerHeight; 
         var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-        
-//        var index_h = $('section').attr("data-index").height();
 
         $(document).ready(function($){
 
             if(!isMobile) {
+//                alert('a');
                 $("section").each(function(index){
-                    if($(window).height()<560){
-                        win_h = 560;
-                        
-//                    }else if($(window).height()<560){
-//                          win_h = 560;
-                             
-                             
-                    }else{
-                        win_h = $(window).height();    
+                    if($("section").width()>767 && $(window).height()<800){
+                        win_h = 800;  
+                    }
+                    else{
+                        win_h = $(window).height();  
+//                        win_h = window.innerHeight;
+                        pc_w = $(window).width();
                     }
                     
                     $(this).attr("data-index", win_h * index);
                     
                 });
             }else{
-              alert('b');
                 $("section").each(function(index){ 
-//                    if($(window).height()<560){
-//                        moWin_h = 560;
-//                    }else{
-//                        moWin_h = $(window).height();    
-//                    } 
-                    
+
                     $(this).attr("data-index", moWin_h * index);
                     
                 });
             }
         });
-        
 
-        $(window).resize(function(){   
-            // if($(window).height()<800){
-            //     win_h = 800;
-            // }else{
-            //     win_h = $(window).height();    
-            // }
-
+        $(window).resize(function(){ 
+            //모바일 아닐때
             if(!isMobile) {
-              //alert('pc')
                 $("section").each(function(index){
-                    if($(window).height()<560){
-                        win_h = 560;
-                        
+                    if($("section").width()>767 && $(window).height()<800){
+                        win_h = 800;   
                     }else{
-                        win_h = $(window).height();    
+                        win_h = $(window).height(); 
+//                        win_h = window.innerHeight;
                     }
-                    
                     $(this).attr("data-index", win_h * index);
+                    $(this).height(win_h);
                     
-                });
-            }else{
-                win_h = $(window).height();    
-            $("section").each(function(index){
-                $(this).attr("data-index", win_h * index);
-            });  
+            });
+            //모바일일때
             }
- 
-//            win_h = $(window).height();    
-//            $("section").each(function(index){
-//                $(this).attr("data-index", win_h * index);
-//            });   
-        });
+//            else{
+////                win_h = $(window).height(); 
+//                win_h = window.innerHeight;
+//                
+//                $("section").each(function(index){
+//                    $(this).attr("data-index", win_h * index);
+//                    $(this).height(win_h);
+////                    $(this).children(".contents").height(win_h);
+//                });
+//                $("section").height(win_h);
+//  
+//            }
+//            console.log("aa"+win_h)
+//            $("html, body").stop().animate({"scrollTop":$('section').eq(currentSection).attr('data-index')},500);
+            
+            
+            
+        });//resize
+
+
         
         
+        
+
+        //PC스크롤
         $("section").on("mousewheel", function(e){
             
             var sectionPos = parseInt($(this).attr("data-index"));
             
             currentSection = $(this).attr("target-index");
-            
             if(e.originalEvent.wheelDelta >0){ 
-                $("html, body").stop().animate({"scrollTop":sectionPos - win_h},500);
-                $('header').addClass('scroll'); 
-                
-                if(currentSection>0){
-                    currentSection--;
-                }
-                dotanimation(currentSection)
-                console.log('currentSection : '+currentSection);
-//                console.log(sectionPos);
-                return false;
-                   
+                $("html, body").stop().animate({"scrollTop":sectionPos - win_h},500, function(){
+                    if(currentSection>0){
+                        console.log('currentSection!!!!! : '+currentSection);
+                        currentSection--;
+                    }else if(currentSection==0){
+                        console.log('currentSection???? : '+currentSection);
+                        $('header').removeClass('scroll');
+                    }
+                    
+                    dotanimation(currentSection)
+                });    
             }else if(e.originalEvent.wheelDelta < 0){   
-                $("html, body").stop().animate({"scrollTop":sectionPos + win_h},500);  
-                $('header').addClass('scroll');
-                
-                if(currentSection<$('section').length - 1){
-                    currentSection++; 
-                }
-                dotanimation(currentSection)
-                console.log('currentSection : '+currentSection);
-//                console.log(sectionPos);
-                return false;
-            }  
+                $("html, body").stop().animate({"scrollTop":sectionPos + win_h},500, function(){
+                    if(currentSection<$('section').length - 1){
+                        currentSection++; 
+                        $('header').addClass('scroll');
+                    }
+                    dotanimation(currentSection)
+                })
+            }
+           
+            
         });
         
         $("footer").on("mousewheel", function(){
-//            var footer = $(this).height();
-//            console.log(footer);
-
             $("html, body").stop().animate({"scrollTop":currentSection},500);  
         });
         
+
+
         
-        //모바일
         
+        //모바일 스크롤
         var ts;
         $("section").bind('touchstart', function(e){
             ts = e.originalEvent.touches[0].clientY;
@@ -650,36 +632,22 @@
             
             var te = e.originalEvent.changedTouches[0].clientY;
             var mo_sectionPos = parseInt($(this).attr("data-index"));
-            
-            if(ts < te){
-                $("html, body").stop().animate({"scrollTop":mo_sectionPos - moWin_h},500);
-                $('header').addClass('scroll');
-                console.log()
-                
-                if(currentSection>0){
-                    currentSection--;
-                }
-                console.log('currentSection : '+currentSection);
-                
-//                 var prev = $(this).prev().offset().top;
-//                $("html, body").stop().animate({"scrollTop":prev},500);
-//                console.log(test);
-
-                return false;
-            
-            }else if(ts >= te){
-                $("html, body").stop().animate({"scrollTop":mo_sectionPos + moWin_h},500);
-                $('header').addClass('scroll');
-                
-                if(currentSection<$('section').length - 1){
-                    currentSection++; 
-                }
-                console.log('currentSection : '+currentSection);
-                
-//                var next = $(this).next().offset().top;
-//                $("html, body").stop().animate({"scrollTop":next},500);
-
-                return false;    
+            var touchgab = ts-te;
+            if(ts<te){
+                $("html, body").clearQueue().animate({"scrollTop":mo_sectionPos - moWin_h},500, function(){
+                    if(currentSection>0){
+                        currentSection--;
+                    }else if(currentSection==0){
+                        $('header').removeClass('scroll');
+                    }
+                })
+            }else if(ts > te){
+                $("html, body").clearQueue().animate({"scrollTop":mo_sectionPos + moWin_h},500, function(){
+                    if(currentSection<$('section').length - 1){
+                        currentSection++; 
+                        $('header').addClass('scroll');
+                    }
+                })
             } 
         });
         
@@ -687,13 +655,20 @@
         $("footer").bind("touchmove", function(e){  
            $("html, body").stop().animate({"scrollTop":currentSection},500);   
         });
+        
 
         
+        
+        
+        
+        
     }); 
+    
 </script>
 
-<script>
 
+<!--모바일 가로X-->
+<script>
 $(document).ready(function(){
     
     $(window).trigger("orientationchange"); 
@@ -701,33 +676,18 @@ $(document).ready(function(){
 });
     
  $(window).bind("orientationchange", function(e) {
-            var orientation = window.orientation;
+     var orientation = window.orientation;
  
-            if (orientation == 90 || orientation == -90) {
-//                alert("가로");
-//                $("body").css({
-//                   "transform": "rotate(90deg)" ,
-//                    "height": "100%",
-//                })
-                
-               
-                $("body").css('display','none');
-                 alert("세로화면으로 확인해주세요");
-//                $("body").addEventListener("touchmove", function(e){ e.preventDefault(); });
-            } else {
-//                alert("세로");
-                $("body").css('display','block');
-                
-
-            }
- 
-        }); 
-    
-    
-    
-    
-
+     if (orientation == 90 || orientation == -90) {                   
+         $("body").css('display','none');
+         alert("세로화면으로 확인해주세요");
+     } else {
+         $("body").css('display','block');
+     }
+ }); 
 </script>
+
+
 
 
 

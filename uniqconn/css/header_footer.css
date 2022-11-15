@@ -1,83 +1,85 @@
-
-header{width:100%; position: fixed; top:0; z-index: 999; box-sizing: border-box;  transition: background .3s;}
-header>div{width:100%; position: relative; border-bottom: 1px solid rgba(65, 65, 65, 0.5); transition: background .3s;}
-header .h_con{width:1200px; margin:0 auto; overflow: hidden;}
+/*header----------------*/
+header{width:100%; position: fixed; top:0; z-index: 999; box-sizing: border-box; background:0;  transition: all .3s;background: #09132c;}
+header>div{width:100%; position: relative; background:0;  border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
+header .h_con{width:1250px; padding:15px 0; margin:0 auto; box-sizing: border-box; overflow: hidden;}
 
 /*logo*/
-header .h_con .logo{margin-top:16px; float: left; width:152px;}
-header .h_con .logo .logo_1{display: block;}
+header .h_con .logo{float: left; width:200px;}
+header .h_con .logo .img{display: block;filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(197deg) brightness(104%) contrast(101%);}
 header .h_con .logo .logo_2{display: none;}
 
 /*menu_con*/
-header .h_con .menu_con{ float: left; width:1048px;}
-header .h_con .menu_con .menu>a{width: 200px; height: 80px; line-height: 80px; padding:0; color:white; font-size: 15px; text-align: center;}
+header .h_con .menu_con{ float: left; width:1050px;}
+header .h_con .menu_con .menu>a{width: 200px; height: 70px; line-height: 70px; padding:0; color:#333; font-size: 18px; font-family: 'Nanum_b'; text-align: center; transition: color .3s; color:white;}
 
 
-/*addClass*/
+
+
+/*mouseover*/
 header .h_con .menu_con .menu>a.a_on{color:#333; transition: color .3s;}
-header .h_con .menu_con .menu>a:hover{color:#6d65e9; font-family: 'Nanum_b';}
+header .h_con .menu_con .menu>a:hover{color:#173AFF; transition: color .3s;}
 
-header>div.active{background:white; transition: background .3s;}
-header>div.active .h_con .logo .logo_1{display: none;}
-header>div.active .h_con .logo .logo_2{display: block;}
+header>div.active{background:white; transition: all .3s;}
+header>div.active .h_con .logo .img{filter: none;}
 
 
 /*scroll*/
-header.scroll>div{background: white; transition: background .3s;}
-header.scroll .h_con .logo .logo_1{display: none;}
-header.scroll .h_con .logo .logo_2{display: block;}
+header.scroll>div{background: white; transition: all .3s;}
+header.scroll .h_con .logo .img{filter: none;}
 header.scroll .h_con .menu_con .menu>a{color:#333; transition: color .3s;}
-header.scroll .h_con .menu_con .menu>a:hover{color:#6d65e9; font-family: 'Nanum_b';}
+header.scroll .h_con .menu_con .menu>a:hover{color:#173AFF; font-family: 'Nanum_b';}
 
 
-/*----------------------------------------------------------------------------*/
-footer{background:#333333; width:100%;  color:#858585; box-sizing: border-box;}
-footer div{ margin:0 auto; padding:35px 10%;}
-footer div p{line-height: 1.5em;}
+/*footer-------------------*/
+footer{background:#131313; width:100%; color:#858585; box-sizing: border-box;}
+footer div{ margin:0 auto; padding:35px 10%; width:100%; box-sizing: border-box;}
+footer div p{line-height: 1.7em; font-size: 14px;  }
 footer div p:first-child{margin-bottom: 25px;}
 footer div p:first-child::after{content: ''; display: block; width:100%; height: 1px; background:#484848; margin-top:25px;}
 
 
+/*------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width:1200px){
+
+@media screen and (min-width:1250px){
     
 }
 
 
-@media screen and (min-width:992px) and (max-width:1199px){
+@media screen and (min-width:1024px) and (max-width:1249px){
     
-    header .h_con{width:980px; margin:0 auto; overflow: hidden;}
-    header .h_con .menu_con{ float: left; width:828px;}
-    header .h_con .menu_con .menu>a{width:150px;}
-    header .h_con .menu_con .menu:hover>a::after{content: ''; display: block; width:150px; height: 3px; background:#6d65e9; margin-top:-4px;}
+    header .h_con{width:100%; padding: 15px 50px; overflow: hidden;}
+    header .h_con .menu_con{ float: left; /*width:947px;*/  width: 77%;}
+    header .h_con .menu_con .menu>a{width:150px; font-family: 'Nanum_b';}
     header .h_con .menu_con .menu .sub_menu ul li{text-align: center; width:150px;}
     
 }
 
 
-@media screen and (min-width:900px) and (max-width:991px){
+/*
+@media screen and (min-width:900px) and (max-width:1023px){
     
-    header .h_con{width:900px; margin:0 auto; overflow: hidden;}
-    header .h_con .menu_con{ float: left; width:748px;}
-    header .h_con .menu_con .menu>a{width:150px;}
-    header .h_con .menu_con .menu:hover>a::after{content: ''; display: block; width:150px; height: 3px; background:#6d65e9; margin-top:-4px;}
+    header .h_con{width:100%; padding: 15px 40px; overflow: hidden;}
+    header .h_con .menu_con{ float: left; width: 74%;}
+    header .h_con .menu_con .menu>a{width:150px; font-family: 'Nanum_b';}
     header .h_con .menu_con .menu .sub_menu ul li{text-align: center; width:150px;}
     
 }
+*/
 
-@media screen and (min-width:480px) and (max-width:899px){
+@media screen and (min-width:480px) and (max-width:1023px){
     
-    header .h_con{width:100%; margin:0 auto; overflow: hidden; } 
-    header .h_con .logo{width:100%; float: none; padding:15px 0; margin-top:0; box-sizing: border-box; border-bottom: 1px solid rgba(65, 65, 65, 0.5);}
-    header .h_con .logo img{width:120px; display: inline-block; margin: 0 auto; }
+    header .h_con{width:100%; margin:0 auto; overflow: hidden;padding:0;} 
+    header .h_con .logo{width:100px; float: none; margin: 0 auto; padding:8px 0; box-sizing: border-box;}
+    header .h_con .logo img{width:100%; display: inline-block; margin: 0 auto; }
     
-    header .h_con .menu_con{ width:100%;}
+    header .h_con .menu_con{ width:100%; border-top:1px solid rgba(255, 255, 255, 0.3);}
     header .h_con .menu_con .menu{width:25%; height: 40px;}
-    header .h_con .menu_con .menu>a{width: 100%; font-size: 12px; height: 80px; line-height: 80px; padding:0; color:white; text-align: center; line-height: 40px; height: 40px;}
+    header .h_con .menu_con .menu>a{width: 100%; font-size: 14px; height: 40px; line-height: 40px; padding:0; color:white; font-family: 'Nanum_b'; text-align: center;}
     
-    footer div{ margin:0 auto; padding:15px 10%;}
-    footer div p{line-height: 1.5em; font-size: 10px;}
-    footer div p:first-child{margin-bottom: 10px;}
+    footer div{ margin:0 auto; padding:15px 5%;}
+    footer div p{line-height: 1.5em; font-size: 14px;}
+    footer div p:first-child{margin-bottom: 10px; word-break: keep-all;}
     footer div p:first-child::after{content: ''; display: block; width:100%; height: 1px; background:#484848; margin-top:10px;}
     
 }
@@ -85,18 +87,21 @@ footer div p:first-child::after{content: ''; display: block; width:100%; height:
 
 @media screen and (min-width:0px) and (max-width:479px){
     
-    header .h_con{width:100%; margin:0 auto; overflow: hidden; } 
-    header .h_con .logo{width:100%; float: none; padding:15px 0; margin-top:0; box-sizing: border-box; border-bottom: 1px solid rgba(65, 65, 65, 0.5);}
-    header .h_con .logo img{width:100px; display: inline-block; margin: 0 auto; }
+    header .h_con{width:100%; padding:0;} 
+    header .h_con .logo{width:100px; float: none; margin: 0 auto; padding:7px 0; box-sizing: border-box;}
+    header .h_con .logo img{width:100%;}
     
-    header .h_con .menu_con{ width:100%;}
-    header .h_con .menu_con .menu{width:25%; height: 40px;}
-    header .h_con .menu_con .menu>a{width: 100%; font-size: 10px; height: 80px; line-height: 80px; padding:0; color:white; text-align: center; line-height: 40px; height: 40px;}
+    header .h_con .menu_con{ width:100%; border-top:1px solid #dfdfdf; box-sizing: border-box;}
+    header .h_con .menu_con .menu{width:25%; height: 30px;}
+    header .h_con .menu_con .menu>a{width: 100%; font-size: 13px; padding:0; height: 30px; line-height: 30px; color:white; font-family: 'Nanum_b'; text-align: center;}
     
-    footer div{ margin:0 auto; padding:15px 10%;}
-    footer div p{line-height: 1.5em; font-size: 10px;}
-    footer div p:first-child{margin-bottom: 10px;}
-    footer div p:first-child::after{content: ''; display: block; width:100%; height: 1px; background:#484848; margin-top:10px;}
+    footer div{width:100%; box-sizing: border-box; margin:0 auto; padding:15px 5%;}
+    footer div p{line-height: 1.5em; font-size: 13px;}
+    footer div p:first-child{margin-bottom: 10px; word-break: keep-all;}
+    footer div p:first-child::after{margin-top:10px;}
+    
+    
+    
 }
 
 
