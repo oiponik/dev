@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title> UXF </title>
-	
+<link rel=" shortcut icon" href="./img/icon_logo.png">
+  <link rel="icon" href="./img/icon_logo.png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 <!--	<link rel=stylesheet href="css/main.css">-->
 	<link rel=stylesheet href="css/sub.css">
@@ -102,7 +103,7 @@
             
             <div class="contactus_con">
               <div class="item d-flex">
-                <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.412665400475!2d127.09169161559682!3d37.42735507982421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca739f99ccb5d%3A0x835282e01b569f83!2z67CY64-E7JWE7J2067mE67C466as!5e0!3m2!1sko!2skr!4v1669108194805!5m2!1sko!2skr" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="map-box"><div id="map_headquarters" width="100%" height="320" style="border:0;height:320px;"></div></div>
                 <div class="txt-box">
                   <h4 class="tit store-tit">Headquarters</h4>
                   <div class="info-box">
@@ -139,7 +140,7 @@
                     </dl>
                   </div>
                 </div>
-                <div class="map-box"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.896868411849!2d127.35487881557093!3d36.36327688004076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654bbe923a716b%3A0x188c0cafc6cf05f4!2z64yA7KCE6rSR7Jet7IucIOycoOyEseq1rCDslrTsnYDroZw0OOuyiOq4uCA5LTEz!5e0!3m2!1sko!2skr!4v1669108365381!5m2!1sko!2skr" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="map-box"><div id="map_engineering" width="100%" height="320" style="border:0;height:320px;"></div></div>
               </div>
             </div>
         
@@ -153,7 +154,10 @@
                 <p>COPYRIGHT &#169; 2022 (주)유엑스팩토리 ALL RIGHTS RESERVED.</p>
             </div>
         </footer>
-        
+        <script
+          defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd6oKLghzveZbIRq2vMLZpcXHLP_ZOo2k&callback=initMap"
+        ></script>
         
         
         
@@ -164,6 +168,34 @@
 
 
 <script>
+  function initMap() {
+      var headquarters = { lat: 37.4274, lng: 127.0939 };
+      var engineering = { lat: 36.3633, lng: 127.3571 };
+      
+      var headquartersMap = new google.maps.Map(
+        document.getElementById('map_headquarters'), {
+          zoom: 15,
+          center: headquarters
+        });
+
+      var engineeringMap = new google.maps.Map(
+        document.getElementById('map_engineering'), {
+          zoom: 15,
+          center: engineering
+        });
+
+        new google.maps.Marker({
+          position: headquarters,
+          map: headquartersMap
+        });
+
+        new google.maps.Marker({
+          position: engineering,
+          map: engineeringMap
+        });
+    }
+
+
 
     $(document).ready(function(){
 
